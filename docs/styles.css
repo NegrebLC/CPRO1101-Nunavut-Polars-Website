@@ -323,7 +323,7 @@ input[type="tel"],
 
 @media (max-width: 600px) {
     .stats_table {
-        font-size: 10px;
+        font-size: 8px;
     }
     .stats_table th,
     .stats_table td {
