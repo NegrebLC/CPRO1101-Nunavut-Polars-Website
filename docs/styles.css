@@ -163,6 +163,7 @@ footer {
     background-color: rgb(29, 29, 91);
     color: aliceblue;
     padding: 20px;
+    width: auto;
 }
 
 footer h2 {
