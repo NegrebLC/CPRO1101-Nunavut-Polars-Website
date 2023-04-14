@@ -188,6 +188,15 @@ footer a:hover {
     background-size: contain;
 }
 
+footer .copyrightContainer {
+    border: 1px solid aliceblue;
+    padding: 10px;
+}
+
+footer .copyright {
+    font-size: 8px;
+}
+
 /* Registration Electronic Form */
 .reg_form{
     background-color: rgb(29, 29, 91);
@@ -203,6 +212,10 @@ footer a:hover {
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.reg_form p a {
+    color: rgb(170, 214, 252);
 }
   
 .reg_form form {
