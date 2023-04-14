@@ -1,0 +1,373 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+.nav_container {
+    background-color: rgb(29, 29, 91);
+    color: aliceblue;
+    width: 100%;
+    border-radius: 5px;
+    margin: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+.nav_menu {
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav_menu li:last-child {
+    margin-right: 0;
+}
+  
+.nav_menu a {
+    float: left;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+  
+.nav_menu a:hover {
+    background-color: rgb(150,150,150, 0.4);
+}
+  
+.dropdown-menu {
+    display: none;
+    z-index: 1;
+    background-color: rgb(29, 29, 91);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: inline-block;
+}
+
+.nav_menu .icon {
+    display: none;
+}
+  
+.nav_menu .icon a {
+    display: flex;
+    color: aliceblue;
+    align-self: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .list a {
+        display: none;
+    }
+    .nav_menu .icon {
+        float: right;
+        display: block;
+    }
+    .nav_container .nav_menu {
+        display: inline-block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .nav_menu.responsive {
+        position: relative;
+    }
+    .nav_menu.responsive a {
+        display: block;
+        list-style: none;
+        text-align: right;
+        padding-right: 30px;
+    }
+    .nav_menu.responsive a.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .nav_menu.responsive .dropdown {
+        display: block;
+        float: left;
+        text-align: center;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu li {
+        display: block;
+        position: relative;
+    }
+}
+
+/* Title/Image */
+.home-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(29, 29, 91);
+}
+  
+.home-head img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.home-head h2 {
+    font-size: 40px;
+}
+
+/* Team Picture */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(29, 29, 91);
+}
+  
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About Us */
+.about {
+    padding: 20px;
+    border: 1px solid rgb(29, 29, 91);
+    color: rgb(29, 29, 91);
+}
+
+.about h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(29, 29, 91);
+    color: aliceblue;
+    padding: 20px;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: rgb(195, 227, 255);
+}
+
+footer a:hover {
+    background-color: rgb(150,150,150, 0.4);
+    background-size: contain;
+}
+
+/* Registration Electronic Form */
+.reg_form{
+    background-color: rgb(29, 29, 91);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid aliceblue;
+}
+  
+.reg_form h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.reg_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.reg_form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+.reg_form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.reg_form input[type="submit"] {
+    background-color: rgb(195, 227, 255);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+  
+.reg_form input[type="submit"]:hover {
+    background-color: rgb(195, 227, 255);
+}
+
+.reg_form select option {
+    background-color: rgb(29, 29, 91);
+    color: aliceblue;
+}
+
+/* Stats Table */
+.stats_table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(29, 29, 91);
+}
+  
+.stats_table thead {
+    background-color: rgb(218, 234, 249);
+}
+  
+.stats_table th {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 8px;
+    text-align: left;
+}
+  
+.stats_table td {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 8px;
+}
+  
+.stats_table tr:nth-child(even) {
+    background-color: rgb(218, 234, 249);
+}
+  
+.stats_table tr:hover {
+    background-color: rgb(195, 227, 255);
+}
+  
+.stats_table td:first-child {
+    font-weight: bold;
+}
+  
+.stats_table td:nth-child(n+4):nth-child(-n+7) {
+    text-align: center;
+}
+  
+.stats_table td:nth-child(8), td:nth-child(9) {
+    text-align: right;
+}
+  
+.stats_table td:nth-child(8)::before {
+    content: '';
+    margin-right: 2px;
+}
+  
+.stats_table td:nth-child(8)::after {
+    content: '"';
+    margin-left: 2px;
+}
+  
+.stats_table td:nth-child(9)::after {
+    content: ' lbs';
+    margin-left: 2px;
+}
+
+@media (max-width: 600px) {
+    .stats_table {
+        font-size: 10px;
+    }
+    .stats_table th,
+    .stats_table td {
+        padding: 6px;
+    }
+    .stats_table td:nth-child(n+4):nth-child(-n+7) {
+        text-align: left;
+    }
+}
+
+/* Schedule Table */
+table.schedule_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: rgb(29, 29, 91);
+}
+  
+.schedule_table thead th {
+    padding: 8px;
+    background-color: rgb(218, 234, 249);
+    border: 1px solid rgb(204, 204, 204);
+    text-align: left;
+}
+  
+.schedule_table tbody td {
+    padding: 8px;
+    border: 1px solid rgb(204, 204, 204);
+}
+  
+.schedule_table tbody tr:hover td {
+    background-color: rgb(195, 227, 255);
+}
+  
+.schedule_table tbody td:first-child {
+    font-weight: bold;
+    color: rgb(29, 29, 91);
+    background-color: rgb(218, 234, 249);
+}
+  
+.schedule_table tbody td:nth-child(2) {
+    text-transform: capitalize;
+}
+  
+.schedule_table tbody td:nth-child(4) {
+    text-align: center;
+}
+
+.schedule_table a:hover{
+    background-color: rgb(150,150,150, 0.4);
+    background-size: contain;
+}
+
+/* Schedule Header */
+.head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    color: rgb(29, 29, 91);
+}
